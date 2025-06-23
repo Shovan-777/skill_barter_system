@@ -1,10 +1,17 @@
 'use client';
+<<<<<<< HEAD
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { AiOutlineSearch } from 'react-icons/ai';
 import { HiMenu, HiX } from 'react-icons/hi';
 import { FaSun, FaMoon } from 'react-icons/fa';
 
+=======
+import React, { useState } from 'react';
+import Link from 'next/link';
+import { AiOutlineSearch } from 'react-icons/ai';
+import { HiMenu, HiX } from 'react-icons/hi';
+>>>>>>> 0a5ad76c326b06efedeb1d9295e022947410ef83
 
 
 export default function Header() {
@@ -15,6 +22,7 @@ const navLinks = [
   { href: '/', label: 'What is Skill Bartering?' },
 ];
 const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+<<<<<<< HEAD
 const [isDarkMode, setIsDarkMode] = useState(false);
 
  useEffect(() => {
@@ -52,6 +60,10 @@ const toggleDarkMode = () => {
 
 
    
+=======
+
+
+>>>>>>> 0a5ad76c326b06efedeb1d9295e022947410ef83
 
   return (
     <nav className="fixed top-0 left-0 right-0 w-screen flex flex-row flex-nowrap items-center justify-between p-6 mb-32 z-[9999999] bg-transparent backdrop-blur-sm dark:bg-transparent dark:backdrop-blur-sm">
@@ -126,6 +138,7 @@ const toggleDarkMode = () => {
       </div>
    )}
 
+<<<<<<< HEAD
     <button
         onClick={toggleDarkMode}
         className="ml-4 p-2 rounded-full bg-gray-200 dark:bg-gray-700 text-black dark:text-white hover:bg-gray-300 dark:hover:bg-gray-600 transition"
@@ -134,6 +147,8 @@ const toggleDarkMode = () => {
         {isDarkMode ? <FaSun /> : <FaMoon />}
       </button>
 
+=======
+>>>>>>> 0a5ad76c326b06efedeb1d9295e022947410ef83
   <Link href="/sign-in" onClick={() => setIsMobileMenuOpen(false)}>
       <button className="w-full text-left px-4 py-2 rounded-md border border-blue-500 text-blue-500 hover:bg-blue-500 hover:text-white transition">
         Sign In

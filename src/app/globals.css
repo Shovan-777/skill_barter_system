@@ -1,5 +1,8 @@
 @import "tailwindcss";
 
+@custom-variant dark (&:where(.dark, .dark *));
+
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -23,4 +26,24 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+
+@layer utilities {
+  /* Used in Header */
+  .letters {
+    @apply
+      hover:text-[#6f82f1]
+      dark:hover:text-[rgba(255,255,255)]
+      hover:font-semibold
+      dark:text-[rgba(255,255,255,0.799)]
+      no-underline
+      px-4
+      whitespace-nowrap
+      font-bold
+      text-[rgba(0,0,0,0.799)]
+      text-[1.2rem]
+      font-mono;
+      
+  }
 }
